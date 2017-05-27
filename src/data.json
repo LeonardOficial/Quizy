@@ -1,225 +1,98 @@
 {
   "profs": ["Humanas", "Exatas", "Biologicas", "TI"],
   "data": [
+  
     {
-      "type": "question",
       "question": "Em relação aos jogos/ferramentas abaixo, qual você gosta mais ?",
-      "answer": [
-        ["SUDOKU",
+      "answers": {
+        "SUDOKU": [
           { "name": "Exatas", "val": 10 },
           { "name": "TI",     "val": 5  }
         ],
-        ["Palavras cruzadas",
+        "Palavras cruzadas": [
           { "name": "Humanas", "val": 10 }
         ],
-        ["Quiz de biologia",
+        "Quiz de biologia": [
           { "name": "Biologicas", "val": 10 }
         ],
-        ["Packet Tracer",
+        "Packet Tracer": [
           { "name": "TI", "val": 10 }
         ]
-      ]
+      }
     },
+    
     {
-      "type": "question",
       "question": "Em uma guerra mundial, você seria responsavel por...",
-      "answer": [
-        ["Liderar as pesquisas e estratégias de batalha", 
+      "answers": {
+        "Liderar as pesquisas e estratégias de batalha": [
           { "name": "Humanas", "val": 10 }
         ],
-        ["Calcular as despesas e receitas econômicas",
+        "Calcular as despesas e receitas econômicas": [
           { "name": "Exatas", "val": 10 }
         ],
-        ["Cuidar dos feridos e/ou do ambiente", 
+        "Cuidar dos feridos e/ou do ambiente": [
           { "name": "Biologicas", "val": 10 }
         ],
-        ["Desenvolver sistemas e/ou reparar computadores", 
+        "Desenvolver sistemas e/ou reparar computadores": [
           { "name": "TI", "val": 10 }
         ]
-      ]
+      }
     },
+    
     {
-      "type": "question",
       "question": "Para aonde você gostaria de ser teletransportado ?",
-      "answer": [
-        ["Para o History Channel", 
+      "answers": {
+        "Para o History Channel": [
           { "name": "Humanas", "val": 10 }
         ],
-        ["Para um programa de Engenharia",
+        "Para um programa de Engenharia": [
           { "name": "Exatas", "val": 10 }
         ],
-        ["Para o Discovery Channel", 
+        "Para o Discovery Channel": [
           { "name": "Biologicas", "val": 10 }
         ],
-        ["Para o laboratório de Dexter", 
+        "Para o laboratório de Dexter": [
           { "name": "TI", "val": 10 }
         ]
-      ]
+      }
     },
+    
     {
-      "type": "question",
       "question": "Com qual dos grupos você está mais familiarizado ?",
-      "answer": [
-        ["∑, f', ∅, H²o",
+      "answers": {
+        "∑, f', ∅, H²o": [
           { "name": "Exatas", "val": 10 }
         ],
-        ["bastão de Asclépios",
+        "bastão de Asclépios": [
           { "name": "Biologicas", "val": 10 }
         ],
-        ["vocativo, mercantilismo, frankfurt, bloco econômico",
-          { "name": "Humanas", "val": 10 }
+        "vocativo, mercantilismo, frankfurt, bloco econômico": [
+         { "name": "Humanas", "val": 10 }
         ],
-        ["CMS, OS, OOP, HD, CCNA",
+        "CMS, OS, OOP, HD, CCNA": [
           { "name": "TI", "val": 10 }
         ]
-      ]
+      }
     },
+    
     {
-      "type": "question",
       "question": "Com quais programas você está mais familiarizado ?",
-      "answer": [
-        ["Ortografa!, Enigeo, Word, Bravolol",
+      "answers": {
+        "Ortografa!, Enigeo, Word, Bravolol": [
           { "name": "Humanas", "val": 10 }
         ],
-        ["Imunne Attack, Visible Body, Virtual Microscope",
+        "Imunne Attack, Visible Body, Virtual Microscope": [
           { "name": "Biologicas", "val": 10 }
         ],
-        ["Latex, Gravity Force Lab, Chemestry Tools",
+        "Latex, Gravity Force Lab, Chemestry Tools": [
           { "name": "Exatas", "val": 10 }
         ],
-        ["DriverPack, Notepad++, Packet Tracer",
+        "DriverPack, Notepad++, Packet Tracer": [
           { "name": "TI", "val": 10 }
         ]
-      ]
-    },
-    {
-      "type": "question",
-      "question": "Com quais siglas você está mais familiarizado ?",
-      "answer": [
-        ["ABNT, OTAN",
-          { "name": "Humanas", "val": 10 }
-        ],
-        ["MDC, MMC",
-          { "name": "Exatas", "val": 10 }
-        ],
-        ["OMA",
-          { "name": "Biologicas", "val": 10 }
-        ],
-        ["CCNA, OS, SQL, HTTP, HD",
-          { "name": "TI",     "val": 10 }
-        ]
-      ]
-    },
-    
-    
-    {
-      "type": "question",
-      "question": "Com quais siglas você está mais familiarizado ?",
-      "answer": [
-        ["ABNT, OTAN",
-          { "name": "Humanas", "val": 10 }
-        ],
-        ["MDC, MMC",
-          { "name": "Exatas", "val": 10 }
-        ],
-        ["OMA",
-          { "name": "Biologicas", "val": 10 }
-        ],
-        ["CCNA, OS, SQL, HTTP, HD",
-          { "name": "TI",     "val": 10 }
-        ]
-      ]
-    },
-    {
-      "type": "question",
-      "question": "Com quais siglas você está mais familiarizado ?",
-      "answer": [
-        ["ABNT, OTAN",
-          { "name": "Humanas", "val": 10 }
-        ],
-        ["MDC, MMC",
-          { "name": "Exatas", "val": 10 }
-        ],
-        ["OMA",
-          { "name": "Biologicas", "val": 10 }
-        ],
-        ["CCNA, OS, SQL, HTTP, HD",
-          { "name": "TI",     "val": 10 }
-        ]
-      ]
-    },
-    {
-      "type": "question",
-      "question": "Com quais siglas você está mais familiarizado ?",
-      "answer": [
-        ["ABNT, OTAN",
-          { "name": "Humanas", "val": 10 }
-        ],
-        ["MDC, MMC",
-          { "name": "Exatas", "val": 10 }
-        ],
-        ["OMA",
-          { "name": "Biologicas", "val": 10 }
-        ],
-        ["CCNA, OS, SQL, HTTP, HD",
-          { "name": "TI",     "val": 10 }
-        ]
-      ]
-    },
-    {
-      "type": "question",
-      "question": "Com quais siglas você está mais familiarizado ?",
-      "answer": [
-        ["ABNT, OTAN",
-          { "name": "Humanas", "val": 10 }
-        ],
-        ["MDC, MMC",
-          { "name": "Exatas", "val": 10 }
-        ],
-        ["OMA",
-          { "name": "Biologicas", "val": 10 }
-        ],
-        ["CCNA, OS, SQL, HTTP, HD",
-          { "name": "TI",     "val": 10 }
-        ]
-      ]
-    },
-    {
-      "type": "question",
-      "question": "Com quais siglas você está mais familiarizado ?",
-      "answer": [
-        ["ABNT, OTAN",
-          { "name": "Humanas", "val": 10 }
-        ],
-        ["MDC, MMC",
-          { "name": "Exatas", "val": 10 }
-        ],
-        ["OMA",
-          { "name": "Biologicas", "val": 10 }
-        ],
-        ["CCNA, OS, SQL, HTTP, HD",
-          { "name": "TI",     "val": 10 }
-        ]
-      ]
-    },
-    {
-      "type": "question",
-      "question": "Com quais siglas você está mais familiarizado ?",
-      "answer": [
-        ["ABNT, OTAN",
-          { "name": "Humanas", "val": 10 }
-        ],
-        ["MDC, MMC",
-          { "name": "Exatas", "val": 10 }
-        ],
-        ["OMA",
-          { "name": "Biologicas", "val": 10 }
-        ],
-        ["CCNA, OS, SQL, HTTP, HD",
-          { "name": "TI",     "val": 10 }
-        ]
-      ]
+      }
     }
+    
   ]
 }
 

@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 export default class Floor extends Component {
 
-  state = { shown: false }
+  //state = { shown: false }
 
   shouldComponentUpdate(nextProps) {
-    return !!this.props.current;
+    return true;
   }
   
 

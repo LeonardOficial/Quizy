@@ -1,49 +1,9 @@
 import React, { Component } from "react";
 import { Progress } from "reactstrap";
 
-import Modal from "../components/Modal";
 import Score from "../components/Score";
-import Floor from "../components/Floor";
+import Question from "../components/Question";
 
-//# Game board flows"
-import Flow from "../flow.json";
-
-const flow = Flow.v1;
-
-
-class Board extends Component {
-
-  shouldComponentUpdate(nextProps) {
-    return this.props.current != nextProps.current;
-  }
-
-  render() {
-  
-    var qIndex  = 0;
-    const board = [];
-  
-    for(var i=0, floor=null; floor=flow[i++];) {
-      if(floor.empty) {
-        board.push(<Floor key={i.toString()} layout={floor} />);
-        continue;
-      }
-      
-      const data = this.props.data.data[qIndex];
-      board.push(<Floor key={i.toString()} qIndex={qIndex} act={this.props.seeQuestion} current={ this.props.current == qIndex } data={data} layout={floor} />);
-      qIndex++;
-    }
-    
-    const boardStyle = { backgroundImage: "url(./imgs/the-game-background.png)" };
-  
-    return(
-      <div class="board" style={boardStyle} >
-        <ul>
-          { board }
-        </ul>
-      </div>
-    );
-  }
-}
 
 export default class TheGame extends Component {
   state = {
@@ -53,10 +13,8 @@ export default class TheGame extends Component {
     //# score
     profs:   {},
     
-    //# modal
-    modal:   {},
-    isOpen:  false,
-    currentIndex: -1,
+    //# question
+    questionData: {},
     currentAnswer: null
   }
   
@@ -72,24 +30,22 @@ export default class TheGame extends Component {
       temp1[profs[i]] = { name: profs[i], val: 0 };
     }
     
-    this.state.profs = { ...temp1 };
+    this.state.profs = {
+      ...temp1 
+    };
+    
+    this.state.questionData = this.props.data.data[0];
     
   }
   
   shouldComponentUpdate(nextProps, nextState) {
-    return (
-      this.state.current      != nextState.current ||
-      this.state.isOpen       != nextState.isOpen  ||
-      this.state.currentIndex != nextProps.currentIndex
-    );
+    return (this.state.current != nextState.current);
   }
   
   componentDidMount() {
-  
     setTimeout(() => {
       this.props.endLoading();
-    }, 500);
-    
+    }, 500);  
   }
   
   increase(name, val) {
@@ -106,10 +62,6 @@ export default class TheGame extends Component {
     });
   }
   
-  seeQuestion = (data) => {
-    this.setState({isOpen: true, modal: data});
-  }
-  
   close = () => {
     this.setState({isOpen: false});
   }
@@ -120,9 +72,8 @@ export default class TheGame extends Component {
     });
   }
   
-  setAnswer = (answer, i) => {
+  setAnswer = (answer) => {
     this.setState({
-      currentIndex: i,
       currentAnswer: answer
     });
   }
@@ -179,11 +130,9 @@ export default class TheGame extends Component {
     return(
       <div class="the-game">
         
-        <Modal isOpen={this.state.isOpen} setAnswer={this.setAnswer} reply={this.reply} data={this.state.modal} currentIndex={this.state.currentIndex} currentAnswer={this.state.currentAnswer} />
-        
         <Score profs={this.state.profs} />
         
-        <Board data={this.props.data} current={this.state.current} seeQuestion={this.seeQuestion} />
+        <Question data={this.state.questionData} setAnswer={this.setAnswer} />
         
       </div>
     );

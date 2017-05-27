@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 
-import MainPage from "./container/MainPage";
+//import MainPage from "./container/MainPage";
 import TheGame from "./container/TheGame";
 
 //# Game data
@@ -47,11 +47,7 @@ class Main extends React.Component {
           <div id="wall" />
         </div>
         
-        { !this.state.playing ? (
-          <MainPage start={this.start} />
-        ) : (
-          <TheGame startLoading={this.startLoading} endLoading={this.endLoading} data={data} />
-        )}
+        <TheGame startLoading={this.startLoading} endLoading={this.endLoading} data={data} />
         
       </div>
     );
