@@ -1,103 +1,33 @@
-{
-  "profs": ["Humanas", "Exatas", "Biologicas", "TI"],
-  "data": [
+[
+  {
+    "question": "Como se chama o local de oração dos indígenas?",
+    "options": ["Mbya", "Xamã", "Opy", "nhandereko"],
+    "answer": "Opy",
+    "img": "./imgs/indio-1.jpg"
+  },
   
-    {
-      "question": "Em relação aos jogos/ferramentas abaixo, qual você gosta mais ?",
-      "answers": {
-        "SUDOKU": [
-          { "name": "Exatas", "val": 10 },
-          { "name": "TI",     "val": 5  }
-        ],
-        "Palavras cruzadas": [
-          { "name": "Humanas", "val": 10 }
-        ],
-        "Quiz de biologia": [
-          { "name": "Biologicas", "val": 10 }
-        ],
-        "Packet Tracer": [
-          { "name": "TI", "val": 10 }
-        ]
-      }
-    },
-    
-    {
-      "question": "Em uma guerra mundial, você seria responsavel por...",
-      "answers": {
-        "Liderar as pesquisas e estratégias de batalha": [
-          { "name": "Humanas", "val": 10 }
-        ],
-        "Calcular as despesas e receitas econômicas": [
-          { "name": "Exatas", "val": 10 }
-        ],
-        "Cuidar dos feridos e/ou do ambiente": [
-          { "name": "Biologicas", "val": 10 }
-        ],
-        "Desenvolver sistemas e/ou reparar computadores": [
-          { "name": "TI", "val": 10 }
-        ]
-      }
-    },
-    
-    {
-      "question": "Para aonde você gostaria de ser teletransportado ?",
-      "answers": {
-        "Para o History Channel": [
-          { "name": "Humanas", "val": 10 }
-        ],
-        "Para um programa de Engenharia": [
-          { "name": "Exatas", "val": 10 }
-        ],
-        "Para o Discovery Channel": [
-          { "name": "Biologicas", "val": 10 }
-        ],
-        "Para o laboratório de Dexter": [
-          { "name": "TI", "val": 10 }
-        ]
-      }
-    },
-    
-    {
-      "question": "Com qual dos grupos você está mais familiarizado ?",
-      "answers": {
-        "∑, f', ∅, H²o": [
-          { "name": "Exatas", "val": 10 }
-        ],
-        "bastão de Asclépios": [
-          { "name": "Biologicas", "val": 10 }
-        ],
-        "vocativo, mercantilismo, frankfurt, bloco econômico": [
-         { "name": "Humanas", "val": 10 }
-        ],
-        "CMS, OS, OOP, HD, CCNA": [
-          { "name": "TI", "val": 10 }
-        ]
-      }
-    },
-    
-    {
-      "question": "Com quais programas você está mais familiarizado ?",
-      "answers": {
-        "Ortografa!, Enigeo, Word, Bravolol": [
-          { "name": "Humanas", "val": 10 }
-        ],
-        "Imunne Attack, Visible Body, Virtual Microscope": [
-          { "name": "Biologicas", "val": 10 }
-        ],
-        "Latex, Gravity Force Lab, Chemestry Tools": [
-          { "name": "Exatas", "val": 10 }
-        ],
-        "DriverPack, Notepad++, Packet Tracer": [
-          { "name": "TI", "val": 10 }
-        ]
-      }
-    }
-    
-  ]
-}
-
-
-
+  {
+    "question": "Qual a função de um xamã?",
+    "options": ["fazer remédios", "fazer instrumentos de caça.", "dar nome as crianças", "Todas as anteriores"],
+    "answer": "Todas as anteriores",
+    "img": "./imgs/indio-2.jpg"
+  },
+  
+  {
+    "question": "Qual o nome do instrumento que os adolescentes tocam que se assemelha a um violino?",
+    "options": ["Rabeca", "oboé", "torokona", "caraca"],
+    "answer": "Rabeca",
+    "img": "./imgs/indio-4.png"
+  },
+  
+  {
+    "question": "A aldeia tekoa Sapucaí está localizada em que localidade do Rio de janeiro?",
+    "options": ["Caxias", "Angra dos Reis", "Búzios", "Macaé"],
+    "answer": "Angra dos Reis",
+    "img": "./imgs/indio-3.jpg"
+  }
+  
+]
 
 
 

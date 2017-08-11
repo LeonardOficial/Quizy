@@ -1,0 +1,68 @@
+.main-page {
+  background-size: 100% 100%;
+  /*border: 1px solid red;*/
+  height: 535px;
+  margin: -8px;
+  margin-bottom: 0px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+.main-page .opac-bg {
+  background-color: black;
+  height: 535px;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.main-page h1 {
+  /*border: 1px solid red;*/
+  color: white;
+  font-size: 42px;
+  margin-top: 80px;
+  width: 100%;
+  position: absolute;
+  z-index: 120;
+}
+.main-page h4 {
+ /* border: 1px solid red;*/
+  color: white;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 180px;
+  width: 60%;
+  position: absolute;
+  z-index: 120;
+}
+.main-page h3 {
+ /* border: 1px solid red;*/
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 380px;
+  width: 100%;
+  position: absolute;
+  z-index: 120;
+}
+
+.main-page h3:hover {
+  color: lime;
+  transform: scale(1.2);
+}
+
+.main-page h3 div {
+  color: #eee;
+  display: inline-block;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 26px;
+  transform: scale(3);
+}
+
+
+
+
+
+

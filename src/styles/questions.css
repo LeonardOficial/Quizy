@@ -1,0 +1,63 @@
+.game-page .questions {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 530px;
+  margin: 0px;
+  position: absolute;
+  width: 100%;
+}
+.game-page .questions .question {
+ /* border: 1px solid red;*/
+  font-size: 30px;
+  height: 300px;
+  text-align: center;
+  width: 100%;
+}
+.game-page .questions .question p {
+  color: #fff;
+  /*border: 1px solid red;*/
+  font-size: 36px;
+  margin-left: 10%;
+  margin-top: 90px;
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  z-index: 120;
+}
+.game-page .questions .options {
+ /* border: 1px solid red;*/
+  height: 150px;
+  list-style-type: none;
+  margin-top: -10px;
+  padding: 0px;
+  position: absolute;
+  width: 100%;
+  z-index: 120;
+}
+.game-page .questions .options li {
+  background-color: #fff;
+  border: 1px solid white;
+  display: inline-block;
+  height: 60px;
+  line-height: 0px;
+  margin-top: 9px;
+  margin-left: 3%;
+  width: 45%;
+}
+.game-page .questions .options li span {
+  background-color: #303030;
+ /* border: 1px solid green;*/
+  color: white;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 8px;
+  text-align: center;
+  width: 20%;
+}
+
+
+
+

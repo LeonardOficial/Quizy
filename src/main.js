@@ -1,54 +1,38 @@
 import React from "react";
 import { render } from "react-dom";
 
-//import MainPage from "./container/MainPage";
-import TheGame from "./container/TheGame";
-
-//# Game data
-import data from "./data.json";
+import MainPage from "./containers/MainPage"
+import FinishPage from "./containers/FinishPage"
+import TheGame from "./containers/TheGame"
 
 import "./styles/styles.js";
+import "./preload.js";
 
 const app = document.getElementById("root");
 
 class Main extends React.Component {
 
-  state = { playing: false, loading: true }
-  /*
-  shouldComponentUpdate(nextProps, nextState) {
-    return this.state.playing != nextState.playing;
-  }*/
-  
-  componentDidMount() {
-  
-    setTimeout(() => {
-      this.endLoading();
-    }, 500);
-  }
+  state = { playing: false, finished: false }
 
   start = () => {
     this.setState({playing: true});
   }
   
-  startLoading = () => {
-    this.setState({loading: true});
-  }
   
-  endLoading = () => {
-    this.setState({loading: false});
+  end = () => {
+    this.setState({playing: false, finished: true});
   }
   
   render() {
+  
+    var Show = (!this.state.playing && !this.state.finished) ? <MainPage start={this.start} /> : <TheGame end={this.end} />;
+    Show = this.state.finished ? <FinishPage /> : Show;
 
     return(
       <div>
-        <div style={{ display: this.state.loading ? "block" : "none" }} id="black-wall">
-          <span class="fa fa-spin fa-spinner" />
-          <div id="wall" />
-        </div>
-        
-        <TheGame startLoading={this.startLoading} endLoading={this.endLoading} data={data} />
-        
+        {
+          Show
+        }
       </div>
     );
   }
