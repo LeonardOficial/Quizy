@@ -48,13 +48,17 @@ export default class TheGame extends Component {
     const currentData = data[this.state.currentQuestion];
 
     return(
-      <div class="game-page">
+      <div class="game-page" style={{backgroundImage: "url("+currentData.img+")"}}>
       
         <div class="opac-bg" />
         
-        <Questions question={currentData.question} options={currentData.options} img={currentData.img} setAnswer={this.setAnswer} />
+        <div class="content">
+        
+          <Questions question={currentData.question} options={currentData.options} setAnswer={this.setAnswer} />
       
-        <Pagination current={this.state.currentQuestion} />
+          <Pagination current={this.state.currentQuestion} />
+        
+        </div>
         
       </div>
     );

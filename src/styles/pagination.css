@@ -1,12 +1,10 @@
 .pagination {
-  height: 80px;
+ /* border: 1px solid blue;*/
+  height: 15%;
   margin: 0px;
-  margin-top: 455px;
   padding: 0px;
   text-align: center;
   width: 100%;
-  position: absolute;
-  z-index: 110;
 }
 
 .pagination li {

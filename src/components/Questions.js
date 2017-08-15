@@ -30,7 +30,7 @@ export default class Questions extends Component {
     }
     
     return(
-      <div class="questions" style={{backgroundImage: "url("+this.props.img+")"}}>
+      <div class="questions-holder">
         <div class="question">
           <p>{ this.props.question }</p>
         </div>

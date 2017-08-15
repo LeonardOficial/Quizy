@@ -1,40 +1,64 @@
-.game-page .questions {
+.game-page {
+ /* border: 1px solid red;*/
   background-size: 100% 100%;
-  background-repeat: no-repeat;
-  height: 530px;
-  margin: 0px;
+  height: 100%;
+  margin: -8px;
+  margin-bottom: 0px;
+  width: 100%;
+  position: absolute;
+}
+.game-page .opac-bg {
+  background-color: black;
+  height: 100%;
+  opacity: 0.6;
   position: absolute;
   width: 100%;
+  z-index: 100;
 }
-.game-page .questions .question {
+
+.game-page .content {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+.game-page .questions-holder {
  /* border: 1px solid red;*/
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 80%;
+  margin: 0px;
+  width: 100%;
+}
+.game-page .questions-holder .question {
+/*  border: 1px solid red;*/
   font-size: 30px;
-  height: 300px;
+  height: 60%;
+  margin: -16px 0px;
   text-align: center;
   width: 100%;
 }
-.game-page .questions .question p {
+.game-page .questions-holder .question p {
   color: #fff;
-  /*border: 1px solid red;*/
+ /* border: 1px solid red;*/
   font-size: 36px;
   margin-left: 10%;
-  margin-top: 90px;
+  margin-top: 8%;
   position: absolute;
   text-align: center;
   width: 80%;
   z-index: 120;
 }
-.game-page .questions .options {
- /* border: 1px solid red;*/
-  height: 150px;
+.game-page .questions-holder .options {
+ /* border: 1px solid white;*/
+  height: 30%;
   list-style-type: none;
-  margin-top: -10px;
   padding: 0px;
   position: absolute;
   width: 100%;
   z-index: 120;
 }
-.game-page .questions .options li {
+.game-page .questions-holder .options li {
   background-color: #fff;
   border: 1px solid white;
   display: inline-block;
@@ -44,7 +68,7 @@
   margin-left: 3%;
   width: 45%;
 }
-.game-page .questions .options li span {
+.game-page .questions-holder .options li span {
   background-color: #303030;
  /* border: 1px solid green;*/
   color: white;

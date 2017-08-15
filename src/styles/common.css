@@ -1,21 +1,5 @@
 body, html { height: 100%; }
 
-.game-page {
-  background-size: 100% 100%;
-  margin: -8px;
-  margin-bottom: 0px;
-  width: 100%;
-  position: absolute;
-}
-.game-page .opac-bg {
-  background-color: black;
-  height: 535px;
-  opacity: 0.6;
-  position: absolute;
-  width: 100%;
-  z-index: 100;
-}
-
 
 
 

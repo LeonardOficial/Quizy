@@ -8,8 +8,8 @@
   
   {
     "question": "Qual a função de um xamã?",
-    "options": ["fazer remédios", "fazer instrumentos de caça.", "dar nome as crianças", "Todas as anteriores"],
-    "answer": "Todas as anteriores",
+    "options": ["fazer remédios", "fazer instrumentos de caça.", "dar nome as crianças", "Ligar a tribo aos deuses"],
+    "answer": "Ligar a tribo aos deuses",
     "img": "./imgs/indio-2.jpg"
   },
   

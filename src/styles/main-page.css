@@ -1,7 +1,7 @@
 .main-page {
   background-size: 100% 100%;
   /*border: 1px solid red;*/
-  height: 535px;
+  height: 100%;
   margin: -8px;
   margin-bottom: 0px;
   width: 100%;
@@ -10,58 +10,62 @@
 }
 .main-page .opac-bg {
   background-color: black;
-  height: 535px;
+  height: 100%;
   opacity: 0.8;
   position: absolute;
   width: 100%;
   z-index: 100;
 }
-
-.main-page h1 {
+.main-page .content {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 120;
+}
+.main-page .title {
   /*border: 1px solid red;*/
   color: white;
-  font-size: 42px;
-  margin-top: 80px;
+  font-size: 120%;
+  height: 30%;
+  margin-top: 20%;
   width: 100%;
-  position: absolute;
-  z-index: 120;
 }
-.main-page h4 {
+.main-page .title h1 {
+  
+}
+.main-page .sub-title {
  /* border: 1px solid red;*/
   color: white;
-  font-size: 20px;
-  margin-left: 20%;
-  margin-top: 180px;
-  width: 60%;
-  position: absolute;
-  z-index: 120;
+  height: 35%;
+  width: 100%;
 }
-.main-page h3 {
+.main-page .sub-title h4 {
+  font-size: 100%;
+  margin-left: 15%;
+  width: 70%;
+}
+
+.main-page .start:hover {
+  cursor: pointer;
+}
+.main-page .start {
  /* border: 1px solid red;*/
   color: white;
-  font-size: 50px;
+  font-size: 180%;
   font-weight: bold;
-  margin-top: 380px;
+  height: 25%;
+  margin-top: -8%;
   width: 100%;
-  position: absolute;
-  z-index: 120;
 }
 
-.main-page h3:hover {
-  color: lime;
-  transform: scale(1.2);
-}
-
-.main-page h3 div {
+.main-page .start div {
+ /* border: 1px solid red;*/
   color: #eee;
   display: inline-block;
   font-size: 40px;
-  line-height: 40px;
   margin: 26px;
-  transform: scale(3);
+  transform: scale(2);
 }
-
-
 
 
 
